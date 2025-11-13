@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Precious Plastic</title>
+		<!-- acesso ao tailwind -->
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-gray-50 text-gray-900">
+		<!-- header  -->
+		<header class="bg-white shadow">
+			<div class="max-w-6xl mx-auto px-4 sm:px-6">
+				<div class="flex items-center justify-between h-16">
+					<a href="#" class="text-xl sm:text-2xl font-extrabold text-indigo-700">Precious Plastic</a>
+
+					<!-- nav -->
+					<nav class="hidden md:flex space-x-6" aria-label="Menu principal">
+						<a href="#missao" class="text-gray-700 hover:text-indigo-600">Missão</a>
+						<a href="#projetos" class="text-gray-700 hover:text-indigo-600">Projetos</a>
+						<a href="#equipe" class="text-gray-700 hover:text-indigo-600">Equipe</a>
+						<a href="#contato" class="text-gray-700 hover:text-indigo-600">Contato</a>
+					</nav>
+
+			<!-- menu -->
+			<div id="mobile-menu" class="md:hidden hidden px-4 pb-4" role="menu" aria-label="Menu móvel">
+				<nav class="flex flex-col space-y-2">
+					<a href="#missao" class="block px-2 py-2 rounded hover:bg-gray-100">Missão</a>
+					<a href="#projetos" class="block px-2 py-2 rounded hover:bg-gray-100">Projetos</a>
+					<a href="#equipe" class="block px-2 py-2 rounded hover:bg-gray-100">Equipe</a>
+					<a href="#contato" class="block px-2 py-2 rounded hover:bg-gray-100">Contato</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- carrossel de imagens -->
+		<main class="mt-8">
+			<section class="max-w-6xl mx-auto px-4 sm:px-6">
+				<div id="carousel" class="relative bg-white rounded-lg shadow-lg overflow-hidden" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens">
+					<div class="carousel-track flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
+						<div class="min-w-full flex-shrink-0">
+							<img src="https://images.unsplash.com/photo-1545235617-9465cd0f6b7b?auto=format&fit=crop&w=1200&q=60" alt="Peças recicladas produzidas" class="w-full h-64 md:h-96 object-cover"/>
+						</div>
+						<div class="min-w-full flex-shrink-0">
+							<img src="https://images.unsplash.com/photo-1527631110382-5f5f1b7f9f8f?auto=format&fit=crop&w=1200&q=60" alt="Processo de reciclagem" class="w-full h-64 md:h-96 object-cover"/>
+						</div>
+						<div class="min-w-full flex-shrink-0">
+							<img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60" alt="Equipe trabalhando" class="w-full h-64 md:h-96 object-cover"/>
+						</div>
+					</div>
+
+					<!-- setas -->
+					<button id="prev" class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow focus:outline-none" aria-label="Anterior">
+						<svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+					</button>
+					<button id="next" class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow focus:outline-none" aria-label="Próximo">
+						<svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+					</button>
+
+					<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+						<button class="indicator w-3 h-3 rounded-full bg-white/80 ring-1 ring-gray-300" aria-label="Ir para o slide 1" data-index="0"></button>
+						<button class="indicator w-3 h-3 rounded-full bg-white/60 ring-1 ring-gray-300" aria-label="Ir para o slide 2" data-index="1"></button>
+						<button class="indicator w-3 h-3 rounded-full bg-white/60 ring-1 ring-gray-300" aria-label="Ir para o slide 3" data-index="2"></button>
+					</div>
+				</div>
+			</section>
+
+			<!-- fazendo com que a nav leve até o conteúdo -->
+			<section id="missao" class="max-w-6xl mx-auto px-4 sm:px-6 mt-12">
+				<h2 class="text-xl font-semibold">Missão</h2>
+				<p class="mt-2 text-gray-600">NAO SEI.</p>
+			</section>
+
+			<section id="projetos" class="max-w-6xl mx-auto px-4 sm:px-6 mt-8">
+				<h2 class="text-xl font-semibold">Projetos</h2>
+				<p class="mt-2 text-gray-600">NEM IDEIA.</p>
+			</section>
+
+			<section id="equipe" class="max-w-6xl mx-auto px-4 sm:px-6 mt-8">
+				<h2 class="text-xl font-semibold">Equipe</h2>
+				<p class="mt-2 text-gray-600">ANDRE</p>
+			</section>
+
+			<!-- contato -->
+			<section id="contato" class="mt-8">
+				<div class="bg-indigo-700 text-white">
+					<div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+						<h2 class="text-2xl font-semibold">Contato</h2>
+						<p class="mt-2 text-indigo-100 max-w-3xl">Fale Conosto!</p>
+
+						<ul class="mt-6 space-y-3">
+											<li>
+												<a href="https://wa.me/5511999999999" class="inline-flex items-center space-x-3 hover:underline" aria-label="WhatsApp" target="_blank" rel="noopener">
+													<img src="./logos/WhatsApp.png" alt="WhatsApp" class="w-8 h-8 p-1 bg-white rounded-full object-contain" />
+													<span class="text-white">WhatsApp: +55 (11) 99999-9999</span>
+												</a>
+											</li>
+											<li>
+												<a href="https://instagram.com/poalab_ifrs" target="_blank" rel="noopener" class="inline-flex items-center space-x-3 hover:underline" aria-label="Instagram">
+													<img src="./logos/insta.png" alt="Instagram" class="w-8 h-8 p-1 bg-white rounded-full object-contain" />
+													<span class="text-white">Instagram: @poalab_ifrs</span>
+												</a>
+											</li>
+											<li>
+												<a href="poalab@poa.ifrs.edu.br" class="inline-flex items-center space-x-3 hover:underline" aria-label="Email">
+													<img src="./logos/gmail.png" alt="Email (Gmail)" class="w-8 h-8 p-1 bg-white rounded-full object-contain" />
+													<span class="text-white">Email: exemplo@universidade.edu.br</span>
+												</a>
+											</li>
+											<li>
+												<a href="https://poalab.net.br/#!/" target="_blank" rel="noopener" class="inline-flex items-center space-x-3 hover:underline" aria-label="Site do Instituto Federal">
+													<img src="./logos/if.png" alt="Instituto Federal - Santa Luzia" class="w-8 h-8 p-1 bg-white rounded-full object-contain" />
+													<span class="text-white">Site: poalab.net.br</span>
+												</a>
+											</li>
+						</ul>
+						<address class="mt-6 not-italic text-indigo-100">Rua Cel. Vicente, 281 | Centro Histórico | CEP: 90030-041 | Porto Alegre/RS</address>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="./pp.js"></script>
+	</body>
+</html>
