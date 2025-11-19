@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR" class="font-[Manrope]">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Precious Plastic PoaLab</title>
+    <!-- fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- acesso ao tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+<!-- header  -->
+<header class=" fixed top-0 w-full z-50 bg-no-repeat bg-cover bg-bottom"
+        style="background-image: url('header_base.png');">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between py-6">
+
+            <!-- Logo + Título -->
+            <div class="flex items-center space-x-3">
+                <img src="Flag_PreciousPlastic.png" alt="Logo Precious Plastic" class="h-16 w-auto">
+                <a href="#" class="text-xl sm:text-2xl font-extrabold text-black">
+                    Precious Plastic PoaLab
+                </a>
+            </div>
+
+            <nav class="hidden md:flex space-x-6" aria-label="Menu principal">
+                <a href="#missao" class="text-gray-700 hover:text-[#0284c7]">Missão</a>
+                <a href="#projetos" class="text-gray-700 hover:text-[#0284c7]">Projetos</a>
+                <a href="#equipe" class="text-gray-700 hover:text-[#0284c7]">Equipe</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- carrossel de imagens -->
+<main class="mt-20 pt-12">
+    <section class="scroll-mt-32 max-w-6xl mx-auto pt-8 sm:px-6">
+        <div id="carousel" class="relative bg-white rounded-lg shadow-lg overflow-hidden" role="region"
+             aria-roledescription="carousel" aria-label="Carrossel de imagens">
+            <div class="carousel-track flex transition-transform duration-500 ease-in-out"
+                 style="transform: translateX(0%);">
+                <div class="min-w-full flex-shrink-0">
+                    <img src="https://cdn.prod.website-files.com/5e004b03e5da773c54823bfb/5e0828a7ed2a273a48725019_keychains.jpg"
+                         alt="Peças recicladas produzidas" class="w-full h-64 md:h-96 object-cover" />
+                </div>
+                <div class="min-w-full flex-shrink-0">
+                    <img src="https://cdn.prod.website-files.com/5e004b03e5da773c54823bfb/5e0831020d37a1766a27e958_beams-p-2000.jpeg"
+                         alt="Processo de reciclagem" class="w-full h-64 md:h-96 object-cover" />
+                </div>
+                <div class="min-w-full flex-shrink-0">
+                    <img src="https://cdn.prod.website-files.com/5e004b03e5da773c54823bfb/5e0835afed2a27610e728130_dome-element.jpg"
+                         alt="Equipe trabalhando" class="w-full h-64 md:h-96 object-cover" />
+                </div>
+            </div>
+
+            <!-- setas -->
+            <button id="prev"
+                    class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow focus:outline-none"
+                    aria-label="Anterior">
+                <svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="next"
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow focus:outline-none"
+                    aria-label="Próximo">
+                <svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="indicator w-3 h-3 rounded-full bg-white/80 ring-1 ring-gray-300"
+                        aria-label="Ir para o slide 1" data-index="0"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-white/60 ring-1 ring-gray-300"
+                        aria-label="Ir para o slide 2" data-index="1"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-white/60 ring-1 ring-gray-300"
+                        aria-label="Ir para o slide 3" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- fazendo com que a nav leve até o conteúdo -->
+    <section id="missao" class="scroll-mt-32 max-w-6xl mx-auto px-4 sm:px-6 mt-16">
+        <h2 class="text-xl font-semibold">Missão</h2>
+        <p class="mt-2 text-gray-600">Nossa missão é enfrentar o desafio global do plástico por meio de ações
+            simples, acessíveis e construídas em colaboração com pessoas do mundo todo. Acreditamos que qualquer
+            indivíduo, quando possui as ferramentas certas, pode transformar resíduos plásticos em algo valioso,
+            útil e duradouro. Por isso, trabalhamos para democratizar o conhecimento, compartilhar tecnologias
+            abertas e incentivar práticas sustentáveis que reduzam o impacto ambiental. Nosso propósito é inspirar
+            comunidades a repensar sua relação com o plástico e mostrar que pequenas iniciativas, quando somadas,
+            podem gerar mudanças reais e significativas para o planeta.</p>
+        <p class="mt-2 text-gray-600">Buscamos fortalecer a economia circular ao desenvolver máquinas, processos e
+            métodos que sejam fáceis de construir e operar, permitindo que projetos locais ganhem autonomia e
+            impacto social. Combinamos criatividade, educação prática e consciência ambiental para que o lixo deixe
+            de ser lixo e passe a ser um recurso capaz de gerar inovação, renda e transformação comunitária.
+            Trabalhamos para conectar pessoas, apoiar iniciativas independentes e estimular novas formas de produção
+            mais responsáveis e éticas. Assim, construímos, passo a passo, um movimento global que acredita no poder
+            da ação coletiva para criar um futuro mais limpo, sustentável e regenerativo para todos.</p>
+    </section>
+
+    <!-- projetos -->
+    <section id="projetos" class="scroll-mt-32 max-w-6xl mx-auto px-4 sm:px-6 mt-16">
+    <h2 class="text-xl font-semibold mb-6">Projetos</h2>
+
+    <div class="flex flex-row justify-between gap-6 overflow-x-auto">
+
+        <div class="flex flex-col items-center cursor-pointer" onclick="toggleDetails('details-1')">
+            <img src="project_1.jpg" alt="Projeto de Extensão IFRS"
+                class="shadow-lg w-40 h-auto rounded-xl shadow-md object-cover hover:opacity-75 transition duration-300">
+            <h3 class="mt-3 text-lg font-semibold text-center">Extensão IFRS</h3>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer" onclick="toggleDetails('details-2')">
+            <img src="project_2.jpg" alt="WAITS Monitoramento da Água"
+                class="shadow-lg w-40 h-auto rounded-xl shadow-md object-cover hover:opacity-75 transition duration-300">
+            <h3 class="mt-3 text-lg font-semibold text-center">WAITS</h3>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer" onclick="toggleDetails('details-3')">
+            <img src="project_3.jpg" alt="Scratch Day"
+                class="shadow-lg w-40 h-auto rounded-xl shadow-md object-cover hover:opacity-75 transition duration-300">
+            <h3 class="mt-3 text-lg font-semibold text-center">Scratch Day</h3>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer" onclick="toggleDetails('details-4')">
+            <img src="project_4.jpg" alt="Centro de Coleta de Tampas de Garrafa"
+                class="shadow-lg w-40 h-auto rounded-xl shadow-md object-cover hover:opacity-75 transition duration-300">
+            <h3 class="mt-3 text-lg font-semibold text-center">Coleta de Tampas</h3>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer" onclick="toggleDetails('details-5')">
+            <img src="project_5.jpg" alt="Hackathon Lixo Zero"
+                class="shadow-lg w-40 h-auto rounded-xl shadow-md object-cover hover:opacity-75 transition duration-300">
+            <h3 class="mt-3 text-lg font-semibold text-center">Hackathon</h3>
+        </div>
+    </div>
+
+    <div id="details-1" class="project-details hidden 
+        bg-gray-100 border-l-4 border-[#0284c7] 
+        p-6 mt-8 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold text-gray-900">Projeto de Extensão IFRS</h4>
+        <p class="mt-2 text-base text-gray-700">
+            <strong>Descrição:</strong> Participação de 14 jovens dos Centros de Juventude Cruzeiro e Viamão, aprendendo robótica, explorando tecnologia, criatividade e trabalho em equipe.
+            <br><strong>Objetivo:</strong> Promover a inclusão digital e o desenvolvimento de habilidades STEAM em comunidades de baixa renda.
+            <br><strong>Resultados:</strong> Construção de protótipos funcionais e exposição de projetos na Semana da Ciência e Tecnologia.
+        </p>
+    </div>
+
+    <div id="details-2" class="project-details hidden 
+        bg-gray-100 border-l-4 border-[#0284c7] 
+        p-6 mt-8 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold text-gray-900">WAITS - Monitoramento da Qualidade da Água</h4>
+        <p class="mt-2 text-base text-gray-700">
+            <strong>Descrição:</strong> Desenvolvimento de um sistema de monitoramento de parâmetros da água em tempo real, utilizando sensores e plataformas de dados abertos.
+            <br><strong>Objetivo:</strong> Gerar dados precisos sobre a qualidade da água em rios e lagos locais para uso da comunidade e órgãos ambientais.
+            <br><strong>Tecnologia:</strong> Microcontroladores (Arduino/ESP32), sensores de pH, turbidez e temperatura, e IoT (Internet das Coisas).
+        </p>
+    </div>
+
+    <div id="details-3" class="project-details hidden 
+        bg-gray-100 border-l-4 border-[#0284c7] 
+        p-6 mt-8 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold text-gray-900">Scratch Day</h4>
+        <p class="mt-2 text-base text-gray-700">
+            <strong>Descrição:</strong> Evento anual de celebração da plataforma de programação por blocos Scratch, reunindo estudantes e educadores em oficinas interativas.
+            <br><strong>Objetivo:</strong> Incentivar a criatividade, o pensamento lógico e a programação entre crianças e adolescentes de forma lúdica.
+            <br><strong>Público:</strong> Estudantes do ensino fundamental e médio de escolas parceiras e comunidade em geral.
+        </p>
+    </div>
+
+    <div id="details-4" class="project-details hidden 
+        bg-gray-100 border-l-4 border-[#0284c7] 
+        p-6 mt-8 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold text-gray-900">Centro de Coleta de Tampas de Garrafa</h4>
+        <p class="mt-2 text-base text-gray-700">
+            <strong>Descrição:</strong> Ponto de entrega voluntária de tampas plásticas para reciclagem, em parceria com uma ONG local.
+            <br><strong>Objetivo:</strong> Arrecadar fundos para causas sociais (como castração de animais) e desviar plásticos de aterros, promovendo a consciência ambiental.
+            <br><strong>Impacto:</strong> O plástico é doado à reciclagem e o valor arrecadado é destinado integralmente à causa parceira.
+        </p>
+    </div>
+
+    <div id="details-5" class="project-details hidden 
+        bg-gray-100 border-l-4 border-[#0284c7] 
+        p-6 mt-8 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold text-gray-900">Hackathon "Lixo Zero"</h4>
+        <p class="mt-2 text-base text-gray-700">
+            <strong>Descrição:</strong> Maratona de desenvolvimento de soluções tecnológicas e de baixo custo para problemas ambientais, com foco na redução de resíduos e na reutilização de materiais.
+            <br><strong>Objetivo:</strong> Estimular o empreendedorismo e a inovação aberta para criar projetos sustentáveis aplicáveis ao contexto urbano.
+            <br><strong>Desafios:</strong> Desenvolvimento de aplicativos de coleta seletiva, protótipos de máquinas de reciclagem e estratégias de compostagem comunitária.
+        </p>
+    </div>
+
+</section>
+
+
+    <!-- equipe -->
+    <section id="equipe" class="max-w-6xl mx-auto px-4 sm:px-6 mt-16">
+        <h2 class="text-xl font-semibold mb-6">Equipe</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+
+            <!-- Perfil 1 -->
+            <div class="flex flex-col items-center">
+                <img src="avatar_icon.png" alt="Avatar"
+                     class="shadow-lg w-28 h-28 object-contain rounded-full mb-3">
+                <h3 class="text-lg font-semibold">Nome</h3>
+                <p class="text-gray-600">Função</p>
+            </div>
+
+            <!-- Perfil 2 -->
+            <div class="flex flex-col items-center">
+                <img src="avatar_icon.png" alt="Avatar"
+                     class="shadow-lg w-28 h-28 object-contain rounded-full mb-3">
+
+                <h3 class="text-lg font-semibold">Nome</h3>
+                <p class="text-gray-600">Função</p>
+            </div>
+
+            <!-- Perfil 3 -->
+            <div class="flex flex-col items-center">
+                <img src="avatar_icon.png" alt="Avatar"
+                     class="shadow-lg w-28 h-28 object-contain rounded-full mb-3">
+
+                <h3 class="text-lg font-semibold">Nome</h3>
+                <p class="text-gray-600">Função</p>
+            </div>
+
+            <!-- Perfil 4 -->
+            <div class="flex flex-col items-center">
+                <img src="avatar_icon.png" alt="Avatar"
+                     class="shadow-lg w-28 h-28 object-contain rounded-full mb-3">
+
+                <h3 class="text-lg font-semibold">Nome</h3>
+                <p class="text-gray-600">Função</p>
+            </div>
+
+            <!-- Perfil 5 -->
+            <div class="flex flex-col items-center">
+                <img src="avatar_icon.png" alt="Avatar"
+                     class="shadow-lg w-28 h-28 object-contain rounded-full mb-3">
+
+                <h3 class="text-lg font-semibold">Nome</h3>
+                <p class="text-gray-600">Função</p>
+            </div>
+
+            <!-- Perfil 6 -->
+            <div class="flex flex-col items-center">
+                <img src="avatar_icon.png" alt="Avatar"
+                     class="shadow-lg w-28 h-28 object-contain rounded-full mb-3">
+
+                <h3 class="text-lg font-semibold">Nome</h3>
+                <p class="text-gray-600">Função</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- contato -->
+    <section id="contato" class="mt-6">
+        <div class="text-black bg-no-repeat bg-cover bg-top" style="background-image: url('footer_top.png');">
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+
+                <div class="flex flex-row flex-wrap gap-6 pt-2">
+
+                    <div>
+                        <a href="https://wa.me/5511999999999"
+                           class="inline-flex items-center space-x-1 hover:underline" aria-label="WhatsApp"
+                           target="_blank" rel="noopener">
+                            <img src="whatsapp.svg" alt="WhatsApp" class="w-5 h-5" />
+                            <span>+55 (11) 99999-9999</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://instagram.com/poalab_ifrs" target="_blank" rel="noopener"
+                           class="inline-flex items-center space-x-1 hover:underline" aria-label="Instagram">
+                            <img src="instagram.svg" alt="Instagram" class="w-5 h-5" />
+                            <span>@poalab_ifrs</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="mailto:poalab@poa.ifrs.edu.br"
+                           class="inline-flex items-center space-x-1 hover:underline" aria-label="Email">
+                            <img src="envelope.svg" alt="Email" class="w-5 h-5" />
+                            <span>poalab@poa.ifrs.edu.br</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://poalab.net.br/#!/" target="_blank" rel="noopener"
+                           class="inline-flex items-center space-x-1 hover:underline"
+                           aria-label="Site do Instituto Federal">
+                            <img src="cursor.svg" alt="Site" class="w-5 h-5" />
+                            <span>poalab.net.br</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <p class="pt-2">
+                    Rua Cel. Vicente, 281 | Centro Histórico | CEP: 90030-041 | Porto Alegre/RS
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+<script src="./pp.js"></script>
+</body>
+
+</html>
